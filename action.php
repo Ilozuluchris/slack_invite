@@ -1,4 +1,5 @@
 <?php
+        #todo: make php output index php then make it run from command line argument
         $email = "jon@gmail.com"; #$_POST['email'];
         $team_url = "academia-ng.slack.com"; #put in slack team url like myslackteam.slack.com
         $token = "insert_token"; #put in your token code
@@ -22,4 +23,4 @@
         --data" .$send."\
         --compressed";
         echo $command;
-        #$output = shell_exec( $command);
+        #$output = shell_exec( $command);#this sends the api call

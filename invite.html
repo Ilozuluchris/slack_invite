@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Slack Inivite</title>
 		<meta charset="utf-8">
@@ -10,11 +10,12 @@
 	</head>
 	<body>
 	  <p>Invite users to you slack page</p>
-	  <form>
-		<label for=email>Enter Your Email</label>
-		<input type="email" name="emailField"/ id="email">
-		<button >Get an Invite Link</button>
-	  </form>
+	  <div class="form-group">
+		  <label for="email">Email address</label>
+		  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+		  <small id="emailHelp" class="form-text text-muted">Enter the email,you want to use this slack team.</small>
+		  <button type="submit" class="btn btn-primary"></button>
+	  </div>
 
 	</body>
 </html>

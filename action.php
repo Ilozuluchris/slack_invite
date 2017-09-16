@@ -5,7 +5,7 @@
         $email = "yomi@dispostable.com";#$_GET["email"];
 
         $team_url = "academia-ng.slack.com"; #put in slack team url like myslackteam.slack.com
-        $token = "xoxp-150107414595-150872153463-240044223985-701b34872ac74e7cc7e2f358deec9238"; #put in your token code
+        $token =  #put in your token code
 		$real_url = "'".'https://' . $team_url .'/api/users.admin.invite'."'";
 		$send = "'".'email='.$email.'&token='.$token.'&set_active=true'."'";
 

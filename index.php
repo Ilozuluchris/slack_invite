@@ -45,7 +45,7 @@
             if (strpos($output, 'true') !== false) {
                 $result = "An invite link has been sent to you";
             } elseif (strpos($output, 'already_invited') !== false) {
-                $result = "You have already been invited.";
+                $result = "You have already been invited.Go check your email";
             } elseif (strpos($output, "token_revoked") !== false) {
                 $result = "The token used for authentication has been revoked,Contact the admin of the slack team";
             } else {

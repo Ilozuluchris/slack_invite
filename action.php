@@ -1,7 +1,6 @@
 <?php
 #Todo find out why token is been revoked and how to use normal token(not legacy token)
 #Todo Get good background images
-#Todo figure out how to read setting from settings.json file so uses do not need to change anything in the code
         $email = "yomi@dispostable.com";#$_GET["email"];
 
         $response= file_get_contents("settings.json");

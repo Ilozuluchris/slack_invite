@@ -4,8 +4,12 @@
 #Todo figure out how to read setting from settings.json file so uses do not need to change anything in the code
         $email = "yomi@dispostable.com";#$_GET["email"];
 
-        $team_url = "academia-ng.slack.com"; #put in slack team url like myslackteam.slack.com
-        $token =  #put in your token code
+        $response= file_get_contents("settings.json");
+        $response = utf8_encode($response);
+        $json = json_decode($response,true);
+
+        $team_url = $json["team_url"]; #put in slack team url like myslackteam.slack.com
+        $token =  $json["token"];
 		$real_url = "'".'https://' . $team_url .'/api/users.admin.invite'."'";
 		$send = "'".'email='.$email.'&token='.$token.'&set_active=true'."'";
 

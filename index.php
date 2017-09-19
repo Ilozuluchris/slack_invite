@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml"> <!--todo:populate read me--> <!--link to external file sheets -->
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml"> <!--todo:populate read me and test on heroku-->  <!--link to external file sheets -->
 	<head>
 		<title>Slack Invite</title>
 		<meta charset="utf-8">

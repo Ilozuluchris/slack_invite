@@ -1,5 +1,6 @@
-# slack_invite
-This automate your slack invite with curl
+# Automate Your Slack Invites
+
+This automate your slack invite with curl using php.
 
 This has only been tested on a linux server.
 

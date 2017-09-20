@@ -7,7 +7,8 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <?php
         if (isset($_GET['submit'])) {
 
@@ -41,28 +42,33 @@
         }
         ?>
     </head>
-    <style>body{
-            background: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.bloggs74.com%2Fwp-content%2Fuploads%2Fplaces8.jpg&f=1) no-repeat center fixed;
+    <style>
+        body{
+            background: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2F95%2Fe1%2F39%2F95e139350a20124207db2a23a036c0ef.jpg&f=1) no-repeat center fixed;
             background-size: cover;
-        }</style>
-	<body class="container" style="padding: 2%;margin: 2%;">
-        <div class="show_stuff" style="height: auto;width: 50% ;margin-left: auto ;margin-right: auto ;padding-top: 40%;">
-            <p class="only" id="display_name" style="padding: 2%;margin: 2%">Invite users to you slack page</p>
+        }
+        #change_color{
+            color: plum;
+        }
+    </style>
+	<body class="img-responsive" style="padding: 2%;margin: 2%;">
+        <div class="show_stuff" style="height: auto;width: 50% ;margin-left: auto ;margin-right: auto ;padding-top: 20%">
             <div class="form-group" style="height: 100%;width: 100%">
+                <p class="only" id="change_color">Invite users to your slack page</p>
                 <form>
-                    <label for="email" style="padding-left: 3%;">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" style="width: 70%;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;padding: 2%;margin: 2%;" required>
-                    <small id="emailHelp" class="form-text text-muted" style="color:red;padding-left: 3%"> Enter the email,you want to use for this slack team.</small>
-                    <button type="submit" name="submit" style="color:darkred;width: auto;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;margin: 2%;padding: 2%"><strong style="color: darkred;">OYA,SEND ME MY INVITE</strong></button>
+                    <label for="email" id="change_color">Email address:</label>
+                    <div class="input-group">
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <button type="submit" class="btn btn-default" style="color:orange; background-color: black">Oya,send me my invite</button>
+                    <!--<button type="submit" name="submit" style="color:#8b0000;width: auto;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;margin: 2%;padding: 2%"><strong style="color: darkred;">OYA,SEND ME MY INVITE</strong></button>-->
                 </form>
 
             </div>
-        </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-            console.log("YES BNKFLM")
-            $.getJSON("settings.json", function(json) {
-                console.log("banana"); // this will show the info it in firebug console
-            });</script>
+        </div>                                                       \
 	</body>
 </html>
+
+
+
+  <!-- <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter Email" style="width: 70%;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;padding: 2%;margin: 2%;" required>-->

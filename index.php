@@ -7,20 +7,7 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	</head>
-	<body class="container" style="padding: 2%;margin: 2%;background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuZHPGWy0430olAXdHNGw95ckQlT0QnSfVMP18PSbRqwnyjIEAg);background-repeat: no-repeat;background-size: 100% 300%;background-clip: padding-box">
-        <div class="show_stuff" style="height: auto;width: 50% ;margin-left: auto ;margin-right: auto ;padding-top: 40%;">
-            <p class="only" style="padding: 2%;margin: 2%">Invite users to you slack page</p>
-            <div class="form-group" style="height: 100%;width: 100%">
-                <form>
-                    <label for="email" style="padding-left: 3%;">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" style="width: 70%;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;padding: 2%;margin: 2%;" required>
-                    <small id="emailHelp" class="form-text text-muted" style="padding-left: 3%"> Enter the email,you want to use this slack team.</small>
-                    <button type="submit" name="submit" class="btn btn-primary" style="width: auto;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;margin: 2%;padding: 2%">OYA,SEND ME MY INVITE</button>
-                </form>
 
-            </div>
-        </div>
         <?php
         if (isset($_GET['submit'])) {
 
@@ -38,8 +25,6 @@
             $command = "curl -X POST " . $real_url . " \
         --data " . $send . " \
         --compressed";
-
-
             $output = exec($command);#this sends the api call
 
             if (strpos($output, 'true') !== false) {
@@ -52,8 +37,32 @@
                 $result = "Some thing went wrong";
             }
             echo "<script>alert('" . $result . "');</script>";
+
         }
         ?>
+    </head>
+    <style>body{
+            background: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.bloggs74.com%2Fwp-content%2Fuploads%2Fplaces8.jpg&f=1) no-repeat center fixed;
+            background-size: cover;
+        }</style>
+	<body class="container" style="padding: 2%;margin: 2%;">
+        <div class="show_stuff" style="height: auto;width: 50% ;margin-left: auto ;margin-right: auto ;padding-top: 40%;">
+            <p class="only" id="display_name" style="padding: 2%;margin: 2%">Invite users to you slack page</p>
+            <div class="form-group" style="height: 100%;width: 100%">
+                <form>
+                    <label for="email" style="padding-left: 3%;">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" style="width: 70%;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;padding: 2%;margin: 2%;" required>
+                    <small id="emailHelp" class="form-text text-muted" style="color:red;padding-left: 3%"> Enter the email,you want to use for this slack team.</small>
+                    <button type="submit" name="submit" style="color:darkred;width: auto;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;margin: 2%;padding: 2%"><strong style="color: darkred;">OYA,SEND ME MY INVITE</strong></button>
+                </form>
 
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            console.log("YES BNKFLM")
+            $.getJSON("settings.json", function(json) {
+                console.log("banana"); // this will show the info it in firebug console
+            });</script>
 	</body>
 </html>

@@ -5,17 +5,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Bootstrap CSS -->
+		<!-- Bootstrap CSS,Jquery and bootstrap js -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>
-            $.getJSON("settings.json", function( data ) {
-                console.log(data);
-                $(".only").append(data['display_name']);
+            $(document).ready(function() {
+                $.getJSON("settings.json", function (data) {
+                    console.log(data);
+                    $(".only").append(data['team_name']);
+                    $(".email_label").append("Enter email to join  " + data['team_name']);
+                });
             });
         </script>
         <?php
+        #if $_GET does not contain the values in the form replace it with $_POST
         if (isset($_GET['submit'])) {
 
             $email = $_GET["email"];
@@ -62,7 +66,7 @@
             <div class="form-group" style="height: 100%;width: 100%">
                 <p class="only" id="change_color"></p>
                 <form>
-                    <label for="email" id="change_color">Email address:</label>
+                    <label class ="email_label" for="email" id="change_color"></label>
                     <div class="input-group">
                         <input id="email" type="text" class="form-control" name="email" placeholder="Email">
                     </div>
@@ -73,3 +77,4 @@
         </div>
 	</body>
 </html>
+<!-- todo: improve spacing between team name and more styling-->

@@ -67,14 +67,9 @@
                         <input id="email" type="text" class="form-control" name="email" placeholder="Email">
                     </div>
                     <button type="submit" class="btn btn-default" style="color:orange; background-color: black">Oya,send me my invite</button>
-                    <!--<button type="submit" name="submit" style="color:#8b0000;width: auto;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;margin: 2%;padding: 2%"><strong style="color: darkred;">OYA,SEND ME MY INVITE</strong></button>-->
                 </form>
 
             </div>
         </div>
 	</body>
 </html>
-
-
-
-  <!-- <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter Email" style="width: 70%;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;padding: 2%;margin: 2%;" required>-->

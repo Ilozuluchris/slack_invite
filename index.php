@@ -9,6 +9,12 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $.getJSON("settings.json", function( data ) {
+                console.log(data);
+                $(".only").append(data['display_name']);
+            });
+        </script>
         <?php
         if (isset($_GET['submit'])) {
 
@@ -54,7 +60,7 @@
 	<body class="img-responsive" style="padding: 2%;margin: 2%;">
         <div class="show_stuff" style="height: auto;width: 50% ;margin-left: auto ;margin-right: auto ;padding-top: 20%">
             <div class="form-group" style="height: 100%;width: 100%">
-                <p class="only" id="change_color">Invite users to your slack page</p>
+                <p class="only" id="change_color"></p>
                 <form>
                     <label for="email" id="change_color">Email address:</label>
                     <div class="input-group">
@@ -65,7 +71,7 @@
                 </form>
 
             </div>
-        </div>                                                       \
+        </div>
 	</body>
 </html>
 

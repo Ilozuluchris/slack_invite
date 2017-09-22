@@ -10,12 +10,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>
-            $(document).ready(function() {
-                $.getJSON("settings.json", function (data) {
-                    console.log(data);
-                    $(".only").append(data['team_name']);
-                    $(".email_label").append("Enter email to join  " + data['team_name']);
-                });
+            $.getJSON("settings.json", function (data) {
+                console.log(data);
+                $(".only").append(data['team_name']);
+                $(".email_label").append("Enter email to join  " + data['team_name']);
             });
         </script>
         <?php
@@ -54,8 +52,8 @@
     </head>
     <style>
         body{
-            background: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mosta2bal.com%2Fvb%2Fbadeencache%2F3%2F23924wall.jpg&f=1) no-repeat center fixed;
-            background-size: cover;
+            background: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mosta2bal.com%2Fvb%2Fbadeencache%2F3%2F23924wall.jpg&f=1) no-repeat center local;
+            background-size: inherit;
         }
         #change_color{
             color: #000000;
@@ -68,7 +66,7 @@
                 <form>
                     <label class ="email_label" for="email" id="change_color"></label>
                     <div class="input-group">
-                        <input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email" req>
                     </div>
                     <button type="submit" class="btn btn-default" style="color:white; background-color: green">Oya,send me my invite</button>
                 </form>

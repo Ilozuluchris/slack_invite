@@ -54,11 +54,11 @@
     </head>
     <style>
         body{
-            background: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2F95%2Fe1%2F39%2F95e139350a20124207db2a23a036c0ef.jpg&f=1) no-repeat center fixed;
+            background: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mosta2bal.com%2Fvb%2Fbadeencache%2F3%2F23924wall.jpg&f=1) no-repeat center fixed;
             background-size: cover;
         }
         #change_color{
-            color: plum;
+            color: #000000;
         }
     </style>
 	<body class="img-responsive" style="padding: 2%;margin: 2%;">
@@ -68,9 +68,9 @@
                 <form>
                     <label class ="email_label" for="email" id="change_color"></label>
                     <div class="input-group">
-                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
                     </div>
-                    <button type="submit" class="btn btn-default" style="color:orange; background-color: black">Oya,send me my invite</button>
+                    <button type="submit" class="btn btn-default" style="color:white; background-color: green">Oya,send me my invite</button>
                 </form>
 
             </div>

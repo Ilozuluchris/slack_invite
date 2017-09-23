@@ -16,6 +16,7 @@
                 $(".email_label").append("Enter email to join  " + data['team_name']);
             });
         </script>
+
         <?php
         #if $_GET does not contain the values in the form replace it with $_POST
         if (isset($_GET['submit'])) {
@@ -46,9 +47,9 @@
                 $result = "Some thing went wrong";
             }
             echo "<script>alert('" . $result . "');</script>";
-
         }
         ?>
+
     </head>
     <style>
         body{
@@ -59,20 +60,23 @@
             color: #000000;
         }
     </style>
+
 	<body class="img-responsive" style="padding: 2%;margin: 2%;">
         <div class="show_stuff" style="height: auto;width: 50% ;margin-left: auto ;margin-right: auto ;padding-top: 20%">
             <div class="form-group" style="height: 100%;width: 100%">
                 <p class="only" id="change_color"></p>
+                <br/>
                 <form>
                     <label class ="email_label" for="email" id="change_color"></label>
                     <div class="input-group">
                         <input id="email" type="text" class="form-control" name="email" placeholder="Email" req>
                     </div>
-                    <button type="submit" class="btn btn-default" style="color:white; background-color: green">Oya,send me my invite</button>
+                    <button type="submit" class="btn btn-default" style="color:white; background-color: green" id="submit" name="submit">Oya,send me my invite</button>
                 </form>
 
             </div>
         </div>
+
 	</body>
 </html>
 <!-- todo: improve spacing between team name and more styling-->

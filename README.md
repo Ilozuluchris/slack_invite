@@ -32,6 +32,8 @@ Next edit  settings.json with the right values
 To get your team url 
 1) If you are using the application click on the arrow beside your team name,that should bring up a drop down list.
 2) If you are using the website just look at the adress bar of your browser.
+
+
 Note team urls end with .slack.com
 
 The token is the api token you just received,you cannot use a token gotten for a team(team X) for a different team(team Y)

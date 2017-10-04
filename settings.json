@@ -1,5 +1,5 @@
 {
-  "team_url":"insert your slack workspace url here",
-  "token": "insert your api token here",
-  "team_name": "insert your slack team name here,so users know the workspace they are getting an invite to"
+  "team_url":"Insert your slack workspace url here",
+  "token": "Insert your api token here",
+  "team_name": "Insert your slack team name here, so users know the workspace they are getting an invite to"
 }

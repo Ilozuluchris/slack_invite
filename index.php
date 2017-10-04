@@ -73,9 +73,9 @@
                 margin-bottom: 1rem;
             }
             .btn {
-                background-color: orangered;
+                background-color: #17a2b8;
                 color: white;
-                border: 1px solid #17afb8;
+                border: 1px solid #fff;
             }
             @media (max-width:500px) {
                 .wrapper-inner {

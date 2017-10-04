@@ -73,8 +73,8 @@
                 margin-bottom: 1rem;
             }
             .btn {
-                background-color: #000;
-                color: #17afb8;
+                background-color: orangered;
+                color: white;
                 border: 1px solid #17afb8;
             }
             @media (max-width:500px) {
@@ -94,7 +94,7 @@
                 <p class="only" id="change_color"></p>
                 <form>
                     <label class ="email_label" for="email" id="change_color"></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" req>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                     <button type="submit" class="btn btn-default" id="submit" name="submit">Oya,send me my invite</button>
                 </form>
             </div>

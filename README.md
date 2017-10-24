@@ -21,7 +21,7 @@ Visit [Legacy tokens](https://api.slack.com/custom-integrations/legacy-tokens) t
 
   1. It authorizes the client permission.If it does not work you would see the  `{"ok":false,"error":"missing_scope","needed":"client","provided":"admin"}`  error.
 
-Your CLIENT_ID could be found in *"Basic Information"* menu of the app page that you just installed.
+Your CLIENT_ID could be found in **"Basic Information"** menu of the app page that you just installed.
 
 Your TEAM_ID could be found in [TEAM IDS](https://api.slack.com/methods/team.info/test)
 

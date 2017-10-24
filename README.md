@@ -34,4 +34,4 @@ Your TEAM_ID could be found in [TEAM IDS](https://api.slack.com/methods/team.inf
 
   * ### The token is the api token you just received,you cannot use a token gotten for a team(team X) for a different team(team Y)
 
-  * ### The team name is the name you want that appears on the index page.This lets users know the name of the team they want to get an invite for.
+  * ### The team name is the name that appears on the index page.This lets users know the name of the team they want to get an invite for.

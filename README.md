@@ -4,7 +4,7 @@ This automate your slack invite with curl using php.
 
 This has only been tested on a linux server.
 
-Visit [Legacy tokens](https://api.slack.com/custom-integrations/legacy-tokens)to generate a token for the team(slack workspace) you to invite people to.
+Visit [Legacy tokens](https://api.slack.com/custom-integrations/legacy-tokens) to generate a token for the team(slack workspace) you to invite people to.
 
 ## OAuth tokens
 

@@ -17,7 +17,7 @@ Visit [Legacy tokens](https://api.slack.com/custom-integrations/legacy-tokens) t
 
   1. Click **"Install App to Team"**
 
-  1. Visit [Authorize my token](https://slack.com/oauth/authorize?&client_id=CLIENT_ID&team=TEAM_ID&install_redirect=install-on-team&scope=admin+client) in your browser and authorize it.
+  1. Replace CLIENT ID with your token and TEAM ID with your team id `https://slack.com/oauth/authorize?&client_id=CLIENT_ID&team=TEAM_ID&install_redirect=install-on-team&scope=admin+client` then go to the link in your browser to authorize your  token.
 
   1. It authorizes the client permission.If it does not work you would see the  `{"ok":false,"error":"missing_scope","needed":"client","provided":"admin"}`  error.
 
